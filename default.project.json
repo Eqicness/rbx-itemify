@@ -1,0 +1,42 @@
+{
+	"name": "rodux_storages",
+	"tree": {
+		"$className": "DataModel",
+		"HttpService": {
+			"$className": "HttpService",
+			"$properties": {
+				"HttpEnabled": true
+			}
+		},
+		"SoundService": {
+			"$className": "SoundService",
+			"$properties": {
+			"RespectFilteringEnabled": true
+			}
+		},
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+			"Shared": {
+				"$className": "Folder",
+				"Storages": {
+					"$path": "src/shared"
+				}
+			}
+		},
+		"StarterPlayer": {
+			"$className": "StarterPlayer",
+			"StarterPlayerScripts": {
+				"$className": "StarterPlayerScripts",
+				"Client": {
+					"$path": "src/client"
+				}
+			}
+		},
+		"ServerStorage": {
+			"$className": "ServerStorage",
+			"Server": {
+				"$path": "src/server"
+			}
+		}
+	}
+}
